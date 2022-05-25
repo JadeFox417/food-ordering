@@ -24,7 +24,7 @@
                                 <hr>
                                 <div class="text-right">
                                     <form>
-                                        <a href="{{ route('getOrder', $menu->id) }}" class="btn btn-primary">Pesan Sekarang <i class="fa fa-fw fa-chevron-circle-right"></i></a>
+                                        <a href="{{ route('getOrder', $menu->id) }}" class="btn btn-primary">Order Now <i class="fa fa-fw fa-chevron-circle-right"></i></a>
                                     </form>
                                 </div>
                             </div>
