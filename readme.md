@@ -1,3 +1,8 @@
+## Group Member : 
+Salma Rahma Lailia	05111942000016
+Juan Carlos Tepanus P	05111942000017
+Farah Dhiah Qorirah	05111942000018
+
 # Laravel PHP Framework
 This App using Laravel version 5.3
 
