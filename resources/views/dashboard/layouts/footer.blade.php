@@ -1,7 +1,7 @@
 <footer class="main-footer">
 	<div class="pull-right hidden-xs">
-		<b>Version</b> 1.0.0
+		<b>JFS TEAM	</b>
 	</div>
-	<strong>Copyright &copy; 2017 <a href="https://facebook.com/caesaralilamondo" target="_blank">KATERING APP</a>.</strong> in Makassar, Indonesia. | Repost by <a href='https://stokcoding.com/' title='StokCoding.com' target='_blank'>StokCoding.com</a>
+	<strong>Copyright &copy; 2022 <a href="https://github.com/JadeFox417/food-ordering" target="_blank">KATERING APP</a> | All Rights Reserved </a>
 	
 </footer>
