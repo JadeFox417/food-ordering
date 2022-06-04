@@ -67,7 +67,7 @@
                 </div>
             </div>
             <div class="row">
-                {{-- Content nya disini Pak --}}
+                {{-- Content --}}
             </div>
         </section>
     </div>

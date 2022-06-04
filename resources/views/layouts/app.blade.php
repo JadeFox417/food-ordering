@@ -62,7 +62,7 @@
                         @else
                             <li>
                                 <a href="{{ route('listOrder') }}">
-                                    <i class="fa fa-shopping-basket" aria-hidden="true" style="margin-right: 5px"></i> <strong>Pesanan</strong>
+                                    <i class="fa fa-shopping-basket" aria-hidden="true" style="margin-right: 5px"></i> <strong>Order Status</strong>
                                 </a>
                             </li>
                             <li class="dropdown">
@@ -73,7 +73,7 @@
 
                                 <ul class="dropdown-menu" role="menu">
                                     <li>
-                                        <a href="{{ url('/profile') }}">Lihat Profil</a>
+                                        <a href="{{ url('/profile') }}">Edit Profile</a>
                                         <a href="{{ url('/logout') }}"
                                             onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">

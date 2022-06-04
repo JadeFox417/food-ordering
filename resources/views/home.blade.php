@@ -4,7 +4,7 @@
     <div class="container">
         <div class="col-md-10 col-md-offset-1">
             <h2 class="page-header">
-                <strong>Menu Makanan Katering</strong>
+                <strong>TOP SELLER MENU</strong>
             </h2>
             <div class="row">
                 @foreach ($menus as $menu)
@@ -15,10 +15,10 @@
                             </div>
                             <div class="panel-body">
                                 <h4>{{ $menu->name }}</h4>
-                                <p><strong>Harga : </strong> Rp. {{ number_format($menu->price,0,',','.') }},- / Porsi</p>
+                                <p><strong>Price : </strong> Rp. {{ number_format($menu->price,0,',','.') }},- / pax</p>
                                 <p>
                                     <a href="javascript:void(0);" data-toggle="popover" title="Description" data-placement="bottom" data-content="{{ $menu->description }}">
-                                        <strong>Lihat deskripsinya Kak! <i class="fa fa-caret-down fa-fw" aria-hidden="true"></i></strong>     
+                                        <strong>See Description <i class="fa fa-caret-down fa-fw" aria-hidden="true"></i></strong>     
                                     </a>
                                 </p>
                                 <hr>
