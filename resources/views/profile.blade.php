@@ -39,20 +39,20 @@
                     </div>
                     <div class="panel-body">
                         <ul class="nav nav-tabs">
-                            <li class="active"><a data-toggle="tab" href="#orderhistory">Riwayat Pemesanan</a></li>
-                            <li><a id="link-edit" data-toggle="tab" href="#editprofile">Edit Profil</a></li>
+                            <li class="active"><a data-toggle="tab" href="#orderhistory">Order History</a></li>
+                            <li><a id="link-edit" data-toggle="tab" href="#editprofile">Edit Profile</a></li>
                         </ul>
                         <div class="tab-content" style="padding-top: 15px;">
                             <div id="orderhistory" class="tab-pane fade in active">
                                 <table id="table-order" class="table table-responsive table-striped">
                                     <thead>
                                         <th>#</th>
-                                        <th>Tanggal</th>
-                                        <th>Pesanan</th>
-                                        <th>QTY</th>
+                                        <th>Join At</th>
+                                        <th>Order Menu</th>
+                                        <th>Quantity</th>
                                         <th>Status</th>
-                                        <th>Total Bayar</th>
-                                        <th>Opsi</th>
+                                        <th>Total Payment</th>
+                                        <th>Option</th>
                                     </thead>
                                     <tbody>
                                         @php $i=1; @endphp
@@ -62,7 +62,7 @@
                                                 <td>{{ $order->created_at->format('d M, Y') }}</td>
                                                 <td>{{ $order->menu->name }}</td>
                                                 <td>{{ $order->qty }} Porsi</td>
-                                                <td><label class="label label-success">Pesanan Selesai</label></td>
+                                                <td><label class="label label-success">Order Successful</label></td>
                                                 <td> Rp. {{ number_format($order->total,0,',','.') }},-</td>
                                                 <td class="text-center">
                                                     <button class="btn btn-primary btn-sm btn-detail" data-toggle="modal" data-target="#modal-detail" data-route="{{ route('detailOrder', $order->id) }}">
@@ -92,28 +92,28 @@
                                     </form>
                                 </div>
                                 <div class="col-md-8">
-                                    <h4 class="page-header">Data Diri</h4>
+                                    <h4 class="page-header">Profile</h4>
                                     <form method="POST" action="{{ route('profile.store') }}">
                                         {{ csrf_field() }}
                                         <div class="form-group">
-                                            <label for="name">Nama Lengkap :</label>
+                                            <label for="name">Full Name :</label>
                                             <div class="input-group">
                                                 <span class="input-group-addon"><i class="fa fa-fw fa-user"></i></span>
                                                 <input type="text" name="name" class="form-control" value="{{ Auth::user()->name }}">
                                             </div>
                                         </div>
                                         <div class="form-group">
-                                            <label for="phone">Whatsapp / No. HP :</label>
+                                            <label for="phone">Contact Phone :</label>
                                             <div class="input-group">
                                                 <span class="input-group-addon"><i class="fa fa-fw fa-whatsapp"></i></span>
-                                                <input type="number" name="phone" class="form-control" value="{{ $profile->phone or '' }}" required="required" placeholder="(Ex: 082xxxxxxxxx)" data-mask="999999999999">
+                                                <input type="number" name="phone" class="form-control" value="{{ $profile->phone or '' }}" required="required" placeholder="(ex: 082xxxxxxxxx)" data-mask="999999999999">
                                             </div>
                                         </div>
                                         <div class="form-group">
-                                            <label for="address">Alamat Lengkap :</label>
+                                            <label for="address">Home Address :</label>
                                             <div class="input-group">
                                                 <span class="input-group-addon"><i class="fa fa-fw fa-map-marker"></i></span>
-                                                <textarea class="form-control" name="address" rows="3" required="required" placeholder="Input alamat lengkap...">{{ $profile->address or '' }}</textarea>
+                                                <textarea class="form-control" name="address" rows="3" required="required" placeholder="Input your address...">{{ $profile->address or '' }}</textarea>
                                             </div>
                                         </div>
                                         <div class="form-group">
