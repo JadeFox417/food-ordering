@@ -24,35 +24,35 @@
             <div class="col-md-10 col-md-offset-1">
                 <div class="panel panel-default">
                     <div class="panel-heading">
-                        <h3 class="panel-title">Keterangan Status</h3>
+                        <h3 class="panel-title">Status Type</h3>
                     </div>
                     <div class="panel-body">
                         <ul>
                             <li>
-                                <label class="label label-warning">Menunggu verifikasi</label> <i class="fa fa-long-arrow-right hidden-xs" aria-hidden="true"></i> 
-                                <label> Pesanan sedang kami cek, apakah bisa diterima atau tidak.</label>
+                                <label class="label label-warning">Order Pending</label> <i class="fa fa-long-arrow-right hidden-xs" aria-hidden="true"></i> 
+                                <label> Check the availability of the menu. We will notity you if your order received.</label>
                             </li>
                             <li>
-                                <label class="label label-info">Pesanan diterima</label> <i class="fa fa-long-arrow-right hidden-xs" aria-hidden="true"></i> 
-                                <label>Pesanan sudah kami terima, dan sedang kami buatkan. Pesanan juga bisa diantar/diambil sesuai dengan permintaan kamu.</label>
+                                <label class="label label-info">Order Received</label> <i class="fa fa-long-arrow-right hidden-xs" aria-hidden="true"></i> 
+                                <label>We got your order and will be delivered if the food is ready.</label>
                             </li>
                         </ul>
                     </div>
                 </div>
                 <div class="panel panel-default">
                     <div class="panel-heading">
-                        <h4 class="panel-title">Daftar Pesanan</h4>
+                        <h4 class="panel-title">Order List</h4>
                     </div>
                     <div class="panel-body">
                         <table id="table-order" class="table table-responsive table-striped">
                             <thead>
                                 <th>#</th>
-                                <th>Tanggal</th>
-                                <th>Pesanan</th>
-                                <th>QTY</th>
+                                <th>Date</th>
+                                <th>Order</th>
+                                <th>Quantity</th>
                                 <th>Status</th>
-                                <th>Total Bayar</th>
-                                <th>Opsi</th>
+                                <th>Total Payment</th>
+                                <th>Option</th>
                             </thead>
                             <tbody>
                                 @php $i=1; @endphp
@@ -61,12 +61,12 @@
                                         <td>{{ $i++ }}.</td>
                                         <td>{{ $order->created_at->format('d M, Y') }}</td>
                                         <td>{{ $order->menu->name }}</td>
-                                        <td>{{ $order->qty }} Porsi</td>
+                                        <td>{{ $order->qty }} pax</td>
                                         <td>
                                             @if ($order->status == 0)
-                                                <label class="label label-warning">Menunggu verifikasi</label>
+                                                <label class="label label-warning">Order Pending</label>
                                             @elseif ($order->status == 1)
-                                                <label class="label label-info">Pesanan diterima</label>
+                                                <label class="label label-info">Order Received</label>
                                             @endif
                                         </td>
                                         <td> Rp. {{ number_format($order->total,0,',','.') }},-</td>
@@ -102,13 +102,13 @@
                     <div class="panel panel-default">
                         <div class="panel-heading">
                             <button type="button" class="close" data-dismiss="modal">&times;</button>
-                            <h3 class="panel-title">Detail pesanan</h3>
+                            <h3 class="panel-title">Order Detail</h3>
                         </div>
                         <div class="panel-body">
                         {{-- Content --}}
                         </div>
                         <div class="panel-footer">
-                            <button type="button" class="btn btn-primary pull-right" data-dismiss="modal">Ok. Tutup.</button>
+                            <button type="button" class="btn btn-primary pull-right" data-dismiss="modal">Okay</button>
                             <div class="clearfix"></div>
                         </div>
                     </div>

@@ -13,15 +13,15 @@
         </div>
         <div class="row">
             <div class="col-md-5">
-                <strong>Jumlah pesanan</strong>
+                <strong>Total Order</strong>
             </div>
             <div class="col-md-7">
-                : {{ $order->qty }} Porsi
+                : {{ $order->qty }} pax
             </div>
         </div>
         <div class="row">
             <div class="col-md-5">
-                <strong>Total bayar</strong>
+                <strong>Total Payment</strong>
             </div>
             <div class="col-md-7">
                 : Rp. {{ number_format($order->total,0,',','.') }},-
@@ -30,7 +30,7 @@
         <hr>
         <div class="row">
             <div class="col-md-5">
-                <strong>Untuk tanggal</strong>
+                <strong>Order Date</strong>
             </div>
             <div class="col-md-7">
                 : {{ date('d M Y', strtotime($order->order_for)) }}
@@ -38,7 +38,7 @@
         </div>
         <div class="row">
             <div class="col-md-5">
-                <strong>Jam</strong>
+                <strong>Time</strong>
             </div>
             <div class="col-md-7">
                 : {{ date('h:i A', strtotime($order->order_for)) }}
@@ -46,21 +46,21 @@
         </div>
         <div class="row">
             <div class="col-md-5">
-                <strong>Pengantaran</strong>
+                <strong>Delivery</strong>
             </div>
             <div class="col-md-7">
                 : 
                 @if ($order->delivery == 1)
-                <label class="label label-success"> Ya </label>
+                <label class="label label-success"> Yes </label>
                 @else 
-                <label class="label label-danger"> Tidak perlu </label>
+                <label class="label label-danger"> Self-Collection </label>
                 @endif
             </div>
         </div>
         @if ($order->delivery == 1)
         <div class="row">
             <div class="col-md-5">
-                <strong>Antar ke alamat</strong>
+                <strong>Delivery Target</strong>
             </div>
             <div class="col-md-7">
                 : {{ $order->to_addr }}
