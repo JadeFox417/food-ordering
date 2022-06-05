@@ -21,16 +21,16 @@
         </div>
         <div class="row">
             <div class="col-md-4">
-                <strong>QTY</strong>
+                <strong>Quantity</strong>
             </div>
             <div class="col-md-8">
-                : {{ $order->qty }} Porsi
+                : {{ $order->qty }} serving/s
             </div>
         </div>
         <hr>
         <div class="row">
             <div class="col-md-4">
-                <strong>Date Time</strong>
+                <strong>Date - Time</strong>
             </div>
             <div class="col-md-8">
                 : {{ date('d M Y - H:i', strtotime($order->order_for)) }}

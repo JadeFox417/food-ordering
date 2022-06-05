@@ -49,11 +49,11 @@
                         <thead>
                             <tr>
                                 <th>#</th>
-                                <th>Order at</th>
+                                <th>Order date</th>
                                 <th>Customer</th>
                                 <th>Menu</th>
-                                <th>QTY</th>
-                                <th>Total</th>
+                                <th>Quantity</th>
+                                <th>Total Payment</th>
                                 <th>Status</th>
                                 <th>Option</th>
                             </tr>
@@ -66,13 +66,13 @@
                                     <td>{{ $order->created_at->format('d M Y') }}</td>
                                     <td><a href="{{ route('customer.show', $order->user_id) }}">{{ $order->user->name }}</a></td>
                                     <td>{{ $order->menu->name }}</td>
-                                    <td>{{ $order->qty }} Porsi</td>
-                                    <td>Rp. {{ number_format($order->total,0,',','.') }}</td>
+                                    <td>{{ $order->qty }} Serving/s</td>
+                                    <td>Rp. {{ number_format($order->total,0,',','.') }},-</td>
                                     <td>
                                         @if ($order->status == 0)
-                                            <label class="label label-warning">Menunggu Verifikasi</label>
+                                            <label class="label label-warning">Pending</label>
                                         @elseif ($order->status == 1)
-                                            <label class="label label-info">Diverifikasi</label>
+                                            <label class="label label-info">Verified</label>
                                         @endif
                                     </td>
                                     <td style="width: 250px">

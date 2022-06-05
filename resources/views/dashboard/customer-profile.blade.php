@@ -39,7 +39,7 @@
                                     <b>Total Ordered</b> <a class="pull-right"><span class="badge">{{ $customer->order->count() }}</span></a>
                                 </li>
                                 <li class="list-group-item">
-                                    <b>Phone / WA</b> <a class="pull-right">{{ $customer->profile->phone or 'Not available' }}</a>
+                                    <b>Contact Phone</b> <a class="pull-right">{{ $customer->profile->phone or 'Not available' }}</a>
                                 </li>
                                 <li class="list-group-item">
                                     <div class="row">
@@ -80,10 +80,10 @@
                                 <thead>
                                     <tr>
                                         <th>#</th>
-                                        <th>Order at</th>
+                                        <th>Order date</th>
                                         <th>Menu</th>
-                                        <th>QTY</th>
-                                        <th>Total</th>
+                                        <th>Quantity</th>
+                                        <th>Total Payment</th>
                                         <th>Status</th>
                                     </tr>
                                 </thead>
@@ -94,13 +94,13 @@
                                             <td><strong>{{ $x++ }}.</strong></td>
                                             <td>{{ $order->created_at->format('H:i - d M Y') }}</td>
                                             <td>{{ $order->menu->name }}</td>
-                                            <td>{{ $order->qty }} Porsi</td>
+                                            <td>{{ $order->qty }} Serving/s</td>
                                             <td>Rp. {{ number_format($order->total,0,',','.') }}</td>
                                             <td>
                                                 @if ($order->status == 0)
-                                                    <label class="label label-warning">Menunggu Verifikasi</label>
+                                                    <label class="label label-warning">Pending</label>
                                                 @elseif ($order->status == 1)
-                                                    <label class="label label-info">Diverifikasi</label>
+                                                    <label class="label label-info">Verified</label>
                                                 @elseif ($order->status == 2)
                                                     <label class="label label-success">Complete</label>
                                                 @endif

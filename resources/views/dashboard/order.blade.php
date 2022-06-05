@@ -49,11 +49,11 @@
                         <thead>
                             <tr>
                                 <th>#</th>
-                                <th>Order at</th>
+                                <th>Order date</th>
                                 <th>Customer</th>
                                 <th>Menu</th>
-                                <th>QTY</th>
-                                <th>Total</th>
+                                <th>Quantity</th>
+                                <th>Total Payment</th>
                                 <th>Status</th>
                                 <th>Option</th>
                             </tr>
@@ -66,8 +66,8 @@
                                     <td>{{ $order->created_at->format('H:i - d M Y') }}</td>
                                     <td><a href="{{ route('customer.show', $order->user_id) }}">{{ $order->user->name }}</a></td>
                                     <td>{{ $order->menu->name }}</td>
-                                    <td>{{ $order->qty }} Porsi</td>
-                                    <td>Rp. {{ number_format($order->total,0,',','.') }}</td>
+                                    <td>{{ $order->qty }} Serving/s</td>
+                                    <td>Rp. {{ number_format($order->total,0,',','.') }},-</td>
                                     <td><label class="label label-success">Complete</label></td>
                                     <td class="text-right" style="width: 180px">
                                         <button class="btn btn-primary btn-sm btn-flat btn-detail" data-toggle="modal" data-target="#modal-detail" data-route="{{ route('detail-order', $order->id) }}">

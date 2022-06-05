@@ -4,7 +4,7 @@
     <div class="content-wrapper">
         {{-- Page Header --}}
         <section class="content-header">
-            <h1>Food Menu's</h1>
+            <h1>Menu List</h1>
             <ol class="breadcrumb">
                 <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
                 <li><a href="#"><i class="fa fa-cog"></i> Other</a></li>
@@ -39,15 +39,15 @@
                                         <h4 style="margin-top: 0;"><strong>{{ $menu->name }}</strong></h4>
                                         <p>
                                             <strong>Price :  </strong>  
-                                            Rp. {{ number_format($menu->price,0,',','.') }},- / Porsi
+                                            Rp. {{ number_format($menu->price,0,',','.') }},- / pax
                                         </p>
                                         <p>
-                                            <strong>Minimal Order :  </strong>  
-                                            {{ $menu->min_order }} Porsi
+                                            <strong>Minimum Order :  </strong>  
+                                            {{ $menu->min_order }} pax
                                         </p>
                                         <p>
                                             <a href="javascript:void(0);" data-toggle="popover" title="Description" data-placement="bottom" data-content="{{ $menu->description }}">
-                                                <strong>Read the description</strong>     
+                                                <strong>See Description</strong>     
                                             </a>
                                         </p>
                                     </div>
@@ -96,7 +96,7 @@
                             {{ csrf_field() }}
                             <div class="box-body">
                                 <div class="form-group">
-                                    <label>Name</label>
+                                    <label>Food Name</label>
                                     <input type="text" class="form-control" name="name" placeholder="Enter the name of new menu..." required="required">
                                 </div>
                                 <div class="form-group">
@@ -131,7 +131,7 @@
                                             </div>
                                         </div>
                                         <div class="col-md-6 hidden-xs" style="padding-top: 30px; padding-left: 0">
-                                            <strong>Porsi</strong>
+                                            <strong>pax</strong>
                                         </div>
                                     </div>
                                 </div>
@@ -153,7 +153,7 @@
                     <div class="modal-dialog">
                         <div class="box box-primary">
                             <div class="box-header with-border">
-                                <h3 class="box-title" align="center"><i class="fa fa-fw fa-pencil"></i> Edit this menu</h3>
+                                <h3 class="box-title" align="center"><i class="fa fa-fw fa-pencil"></i> Update Menu</h3>
                                 <div class="box-tools pull-right">
                                     <button type="button" class="btn btn-box-tool" data-dismiss="modal" aria-label="Close">
                                         <i class="fa fa-times"></i>
@@ -164,7 +164,7 @@
                                 <div class="box-body">
                                     <div class="col-md-8">
                                         <div class="form-group">
-                                            <label>Name</label>
+                                            <label>Food Name</label>
                                             <input type="text" class="form-control" name="name" placeholder="Enter the name of new menu..." required="required">
                                         </div>
                                         <div class="form-group">
