@@ -1,6 +1,6 @@
 <header class="main-header">
     <a href="{{ url('/admin') }}" class="logo">
-        <span class="logo-mini"><b>K</b>A</span>
+        <span class="logo-mini"><b>J</b>F<b>S</span>
         <span class="logo-lg"><b>Administrator</b></span>
     </a>
 
