@@ -4,7 +4,7 @@
     <div class="content-wrapper">
         {{-- Page Header --}}
         <section class="content-header">
-            <h1>Menu List</h1>
+            <h1>Menu Available</h1>
             <ol class="breadcrumb">
                 <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
                 <li><a href="#"><i class="fa fa-cog"></i> Other</a></li>
