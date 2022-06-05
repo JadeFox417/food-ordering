@@ -45,7 +45,7 @@
                 @if ($order->delivery == 1)
                     <label class="label label-success"> Yes </label>
                 @else 
-                    <label class="label label-danger"> No </label>
+                    <label class="label label-danger"> Self-Collection </label>
                 @endif
             </div>
         </div>

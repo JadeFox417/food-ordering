@@ -39,11 +39,11 @@
                                         <h4 style="margin-top: 0;"><strong>{{ $menu->name }}</strong></h4>
                                         <p>
                                             <strong>Price :  </strong>  
-                                            Rp. {{ number_format($menu->price,0,',','.') }},- / pax
+                                            Rp. {{ number_format($menu->price,0,',','.') }},- / serving
                                         </p>
                                         <p>
                                             <strong>Minimum Order :  </strong>  
-                                            {{ $menu->min_order }} pax
+                                            {{ $menu->min_order }} serving/s
                                         </p>
                                         <p>
                                             <a href="javascript:void(0);" data-toggle="popover" title="Description" data-placement="bottom" data-content="{{ $menu->description }}">
@@ -131,7 +131,7 @@
                                             </div>
                                         </div>
                                         <div class="col-md-6 hidden-xs" style="padding-top: 30px; padding-left: 0">
-                                            <strong>pax</strong>
+                                            <strong>serving/s</strong>
                                         </div>
                                     </div>
                                 </div>

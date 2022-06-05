@@ -15,7 +15,7 @@
                             </div>
                             <div class="panel-body">
                                 <h4>{{ $menu->name }}</h4>
-                                <p><strong>Price : </strong> Rp. {{ number_format($menu->price,0,',','.') }},- / pax</p>
+                                <p><strong>Price : </strong> Rp. {{ number_format($menu->price,0,',','.') }},- / serving</p>
                                 <p>
                                     <a href="javascript:void(0);" data-toggle="popover" title="Description" data-placement="bottom" data-content="{{ $menu->description }}">
                                         <strong>See Description <i class="fa fa-caret-down fa-fw" aria-hidden="true"></i></strong>     

@@ -16,7 +16,7 @@
                 <strong>Total Order</strong>
             </div>
             <div class="col-md-7">
-                : {{ $order->qty }} pax
+                : {{ $order->qty }} Serving/s
             </div>
         </div>
         <div class="row">

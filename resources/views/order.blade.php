@@ -22,7 +22,7 @@
                         <div class="col-md-7">
                             <h3 class="page-header">{{ $menu->name }}</h3>
                             <p>
-                                <strong>Price : </strong> Rp. {{ number_format($menu->price,0,',','.') }},- / pax
+                                <strong>Price : </strong> Rp. {{ number_format($menu->price,0,',','.') }},- / serving
                             </p>
                             <div class="input-group col-md-4">
                                 <div class="input-group-btn">
@@ -38,7 +38,7 @@
                                 </div>
                             </div>
                             <p>
-                                <span class="help-block"><i>* note :</i> at least have to order {{$menu->min_order}} pax</span>
+                                <span class="help-block"><i>* note :</i> at least have to order {{$menu->min_order}} serving/s</span>
                             </p>
                         </div>
                     </div>

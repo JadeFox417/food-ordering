@@ -49,7 +49,7 @@
                         <thead>
                             <tr>
                                 <th>#</th>
-                                <th>Order date</th>
+                                <th>Order Date</th>
                                 <th>Customer</th>
                                 <th>Menu</th>
                                 <th>Quantity</th>

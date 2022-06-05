@@ -47,8 +47,8 @@
                         <table id="table-order" class="table table-responsive table-striped">
                             <thead>
                                 <th>#</th>
-                                <th>Date</th>
-                                <th>Order</th>
+                                <th>Order Date</th>
+                                <th>Menu</th>
                                 <th>Quantity</th>
                                 <th>Status</th>
                                 <th>Total Payment</th>
@@ -61,7 +61,7 @@
                                         <td>{{ $i++ }}.</td>
                                         <td>{{ $order->created_at->format('d M, Y') }}</td>
                                         <td>{{ $order->menu->name }}</td>
-                                        <td>{{ $order->qty }} pax</td>
+                                        <td>{{ $order->qty }} Serving/s</td>
                                         <td>
                                             @if ($order->status == 0)
                                                 <label class="label label-warning">Order Pending</label>

@@ -39,7 +39,7 @@
                         <thead>
                             <tr>
                                 <th>#</th>
-                                <th>Name</th>
+                                <th>Customer Name</th>
                                 <th>Email</th>
                                 <th>Join At</th>
                                 <th>Total Order Count</th>
@@ -55,7 +55,7 @@
                                         <td>{{ $user->name }}</td>
                                         <td>{{ $user->email }}</td>
                                         <td>{{ $user->created_at->diffForHumans() }}</td>
-                                        <td>{{ $user->order->count() }} kali</td>
+                                        <td>{{ $user->order->count() }} time/s</td>
                                         <td class="text-right"  style="width: 180px;">
                                             <a href="{{ route('customer.show', $user->id) }}" class="btn btn-primary btn-sm btn-flat"><i class="fa fa-user"></i> <strong>PROFILE</strong></a>
                                             <button class="btn btn-danger btn-sm btn-flat" onclick="document.getElementById('remove-user-{{ $user->id }}').submit();"><i class="fa fa-times"></i> <strong>DELETE</strong></button>
