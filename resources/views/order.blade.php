@@ -12,7 +12,7 @@
     <div class="row">
         <div class="col-md-8 col-md-offset-2">
             <div class="panel panel-default">
-                <div class="panel-heading"><h4 class="panel-title">Pemesanan</h4></div>
+                <div class="panel-heading"><h4 class="panel-title">Food Order</h4></div>
 
                 <div class="panel-body">
                     <div class="row">
@@ -22,7 +22,7 @@
                         <div class="col-md-7">
                             <h3 class="page-header">{{ $menu->name }}</h3>
                             <p>
-                                <strong>Harga : </strong> Rp. {{ number_format($menu->price,0,',','.') }},- / Porsi
+                                <strong>Price : </strong> Rp. {{ number_format($menu->price,0,',','.') }},- / pax
                             </p>
                             <div class="input-group col-md-4">
                                 <div class="input-group-btn">
@@ -38,7 +38,7 @@
                                 </div>
                             </div>
                             <p>
-                                <span class="help-block"><i>* note :</i> minimal pemesanan adalah 10 porsi</span>
+                                <span class="help-block"><i>* note :</i> at least have to order {{$menu->min_order}} pax</span>
                             </p>
                         </div>
                     </div>
@@ -54,12 +54,12 @@
                                             <div class="row">
                                                 <div class="col-md-5">
                                                     <h4 class="panel-title">
-                                                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse1"> Makanannya mau diantarkan ?</a>
+                                                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse1"> Type of Delivery</a>
                                                     </h4>
                                                 </div>
                                                 <div class="col-md-7">
-                                                    <label class="radio-inline"><input type="radio" name="deliver" checked="checked" value="1"><i>Ya, antarkan.</i></label>
-                                                    <label class="radio-inline"><input type="radio" name="deliver" value="0"><i>Tidak perlu, saya akan jemput sendiri.</i></label>
+                                                    <label class="radio-inline"><input type="radio" name="deliver" checked="checked" value="1"><i>Door-step Delivery </i></label>
+                                                    <label class="radio-inline"><input type="radio" name="deliver" value="0"><i>Self-Collection </i></label>
                                                 </div>
                                             </div>
                                         </div>
@@ -68,7 +68,7 @@
                                                 <div class="row">
                                                     <div class="col-md-6">
                                                         <div class="form-group">
-                                                            <label>Tanggal :</label>
+                                                            <label>Date :</label>
                                                             <div class="input-group date">
                                                                 <div class="input-group-addon">
                                                                     <i class="fa fa-calendar"></i>
@@ -78,7 +78,7 @@
                                                         </div>
                                                         <div class="bootstrap-timepicker">
                                                             <div class="form-group">
-                                                                <label>Jam :</label>
+                                                                <label>Time :</label>
                                                                 <div class="input-group">
                                                                     <div class="input-group-addon">
                                                                         <i class="fa fa-clock-o"></i>
@@ -90,7 +90,7 @@
                                                     </div>
                                                     <div class="col-md-6 deliver">
                                                         <div class="form-group">
-                                                            <label>Alamat :</label>
+                                                            <label>Address :</label>
                                                             <div class="input-group date">
                                                                 <div class="input-group-addon">
                                                                     <i class="fa fa-map-marker"></i>
@@ -112,18 +112,18 @@
                 <div class="panel-footer">
                     <div class="row">
                         <div class="col-md-5 hidden-xs">
-                            <a href="{{ url('/home') }}" class="btn btn-default"><i class="fa fa-arrow-left" aria-hidden="true"></i> Kembali</a>
+                            <a href="{{ url('/home') }}" class="btn btn-default"><i class="fa fa-arrow-left" aria-hidden="true"></i> BACK TO MENU</a>
                         </div>
                         <div class="col-md-4">
                             <div class="form-group">
                                 <div class="input-group pull-right">
-                                    <span class="input-group-addon">Total - Rp. </span>
+                                    <span class="input-group-addon">Total - Rp.</span>
                                     <input type="text" name="total" class="form-control" placeholder="total..." readonly="readonly" style="background-color: white">
                                 </div>
                             </div>
                         </div>
                         <div class="col-md-3">
-                            <button class="btn btn-primary pull-right" type="button" onclick="document.getElementById('trx').submit()">Lanjut pemesanan <i class="fa fa-arrow-right" aria-hidden="true"></i></button>
+                            <button class="btn btn-primary pull-right" type="button" onclick="document.getElementById('trx').submit()">CHECKOUT ORDER <i class="fa fa-arrow-right" aria-hidden="true"></i></button>
                         </div>
                     </div>
                 </div>
