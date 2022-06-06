@@ -54,6 +54,6 @@ class OrderController extends Controller
 
     private function cancelOrder($id) {
     	$order = Order::destroy($id);
-    	return redirect()->route('pending-order')->with('message', 'OK. Order has been canceled.');
+    	return redirect()->route('pending-order')->with('message', 'Order has been canceled.');
     }
 }

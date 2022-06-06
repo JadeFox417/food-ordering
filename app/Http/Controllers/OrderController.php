@@ -48,7 +48,7 @@ class OrderController extends Controller
 
     public function cancelOrder(Request $request, $id) {
         $order = Order::destroy($request->id);
-        return redirect()->route('listOrder')->with('message', 'Sesuai permintaan kamu, Pesanan kami batalkan. Terimakasih, Silahkan lakukan pemesanan kembali.');
+        return redirect()->route('listOrder')->with('message', 'According to your request,your order is cancelled. Thank you, please place your order again.');
     }
 
     public function successOrder() {

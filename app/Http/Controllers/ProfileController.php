@@ -102,7 +102,7 @@ class ProfileController extends Controller
                 $profile->update(['pictures' => $filename]);
             }
         }
-        return redirect()->route('profile.index')->with('message', 'Profile berhasil diperbarui, Terimakasih.');
+        return redirect()->route('profile.index')->with('message', 'Profile has been successfully updated, Thank you.');
     }
 
     /**
