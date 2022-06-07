@@ -2,9 +2,10 @@
 
 @section('content')
     <div class="container">
+        <div class="container newupdate"> 
         <div class="col-md-10 col-md-offset-1">
             <h2 class="page-header">
-                <strong>TOP SELLER MENU</strong>
+                <strong>Our Selection Menu</strong>
             </h2>
             <div class="row">
                 @foreach ($menus as $menu)
