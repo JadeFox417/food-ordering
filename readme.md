@@ -29,5 +29,17 @@ Documentation for the framework can be found on the [Laravel website](http://lar
 
 - Done.
 
+## Website Preview
+
+Login Page
+![image](https://user-images.githubusercontent.com/73702347/172288453-179cbd6a-de05-4b3b-bbee-651f60c0ae02.png)
+
+Menu Page
+![image](https://user-images.githubusercontent.com/73702347/172288313-81ed8f02-3400-4dbe-8f9f-aae99e9b343c.png)
+
+Choosen Menu
+![image](https://user-images.githubusercontent.com/73702347/172288362-e14680a9-4182-4591-96f1-5a870c93a2db.png)
+
+
 ## Any Question ? Contact me on:
 - [Facebook](https://facebook.com/caesaralilamondo)
