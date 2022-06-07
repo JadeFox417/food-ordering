@@ -59,8 +59,7 @@ return [
     |--------------------------------------------------------------------------
     |
     | Here you may specify the default timezone for your application, which
-    | will be used by the PHP date and date-time functions. We have gone
-    | ahead and set this to a sensible default for you out of the box.
+    | will be used by the PHP date and date-time functions.
     |
     */
 
@@ -130,8 +129,7 @@ return [
     |--------------------------------------------------------------------------
     |
     | The service providers listed here will be automatically loaded on the
-    | request to your application. Feel free to add your own services to
-    | this array to grant expanded functionality to your applications.
+    | request to your application. 
     |
     */
 
