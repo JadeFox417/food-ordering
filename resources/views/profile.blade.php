@@ -197,7 +197,7 @@
 
             $(function () {
                 new PNotify({
-                    title: 'Sukses.',
+                    title: 'Success.',
                     text: '{{ session('message') }}',
                     type: 'info',
                     hide: true,
