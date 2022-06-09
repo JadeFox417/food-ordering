@@ -87,7 +87,7 @@
                                             <input type="file" name="pict" class="hidden">
                                         </div>
                                         <div class="form-group">
-                                            <button class="btn btn-block disabled" type="button" id="upload"><strong>Ubah Gambar</strong> <i class="fa fa-fw fa-upload"></i></button>
+                                            <button class="btn btn-block disabled" type="button" id="upload"><strong>Change Picture</strong> <i class="fa fa-fw fa-upload"></i></button>
                                         </div>
                                     </form>
                                 </div>
@@ -117,7 +117,7 @@
                                             </div>
                                         </div>
                                         <div class="form-group">
-                                            <button type="submit" class="btn btn-primary">Simpan perubahan <i class="fa fa-fw fa-check-square-o"></i></button>                                            
+                                            <button type="submit" class="btn btn-primary">Save Changes <i class="fa fa-fw fa-check-square-o"></i></button>                                            
                                         </div>
                                     </form>
                                 </div>
