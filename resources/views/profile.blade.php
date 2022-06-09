@@ -139,7 +139,7 @@
 
                         </div>
                         <div class="panel-footer">
-                            <button type="button" class="btn btn-primary pull-right" data-dismiss="modal">Ok. Tutup.</button>
+                            <button type="button" class="btn btn-primary pull-right" data-dismiss="modal">Ok</button>
                             <div class="clearfix"></div>
                         </div>
                     </div>
