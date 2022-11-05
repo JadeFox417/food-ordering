@@ -40,6 +40,3 @@ Menu Page
 Choosen Menu
 ![image](https://user-images.githubusercontent.com/73702347/172288362-e14680a9-4182-4591-96f1-5a870c93a2db.png)
 
-
-## Any Question ? Contact me on:
-- [Facebook](https://facebook.com/caesaralilamondo)
